@@ -5,7 +5,6 @@ import re
 from scrapy.pipelines.images import ImagesPipeline
 import os
 
-# Pipeline для обробки даних і збереження в PostgreSQL
 class NewsScrappingLabPipeline:
     def open_spider(self, spider):
         try:
@@ -86,15 +85,14 @@ class NewsScrappingLabPipeline:
         if self.conn:
             self.conn.close()
 
-# Pipeline для завантаження зображень
 class NewsImagesPipeline(ImagesPipeline):
     def file_path(self, request, response=None, info=None, *, item=None):
-        image_name = request.url.split('/')[-1]  # Отримуємо ім'я файлу з URL
-        return f"img/{image_name}"  # Зберігаємо в папку img
+        image_name = request.url.split('/')[-1]  
+        return f"img/{image_name}" 
 
     def item_completed(self, results, item, info):
-        image_paths = [x['path'] for ok, x in results if ok]  # Отримуємо шляхи завантажених зображень
+        image_paths = [x['path'] for ok, x in results if ok] 
         if image_paths:
             adapter = ItemAdapter(item)
-            adapter['image_paths'] = image_paths  # Додаємо шляхи до айтема
+            adapter['image_paths'] = image_paths 
         return item
