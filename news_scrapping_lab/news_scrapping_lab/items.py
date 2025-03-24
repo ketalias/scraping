@@ -11,3 +11,4 @@ class NewsScrappingLab(scrapy.Item):
     date = scrapy.Field()        
     link = scrapy.Field()        
     section = scrapy.Field() 
+    image_urls = scrapy.Field()

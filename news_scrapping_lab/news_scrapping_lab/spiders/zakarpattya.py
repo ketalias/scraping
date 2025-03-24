@@ -16,9 +16,12 @@ class ZakarpattyaSpider(scrapy.Spider):
         if news_list:
             for item in news_list.find_all("a", href=True):
                 section_name = item.text.strip()
-                section_url = item.get("href")
-                section_url = response.urljoin(section_url)
-                yield scrapy.Request(section_url, callback=self.parse_section, meta={'section_name': section_name})
+                section_url = response.urljoin(item.get("href"))
+                yield scrapy.Request(
+                    section_url,
+                    callback=self.parse_section,
+                    meta={'section_name': section_name}
+                )
         else:
             self.logger.error(f"Error: Could not find 'topmenu' on {response.url}")
 
@@ -36,12 +39,17 @@ class ZakarpattyaSpider(scrapy.Spider):
             title_tag = post.find("h3")
             link_tag = post.find("a")
             date_tag = post.find(class_="pdate")
+            img_tag = post.find("img")
+            
             title = title_tag.text.strip() if title_tag else "Без заголовка"
             date = date_tag.text.strip() if date_tag else "Без дати"
             link = response.urljoin(link_tag["href"]) if link_tag else "Без посилання"
+            img_url = img_tag.get("src") if img_tag else ""
+            
             yield NewsScrappingLab(
                 title=title,
                 date=date,
                 link=link,
-                section=section_name
+                section=section_name,
+                image_urls=[f"https://zakarpattya.net.ua{img_url}"] if img_url else []
             )

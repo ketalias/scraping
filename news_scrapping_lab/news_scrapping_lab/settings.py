@@ -61,9 +61,10 @@ ROBOTSTXT_OBEY = False
 
 # Configure item pipelines
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
-#ITEM_PIPELINES = {
-#    "news_scrapping_lab.pipelines.NewsScrappingLabPipeline": 300,
-#}
+ITEM_PIPELINES = {
+   "news_scrapping_lab.pipelines.NewsScrappingLabPipeline": 400,
+   "scrapy.pipelines.images.ImagesPipeline": 100,
+}
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
@@ -89,3 +90,6 @@ ROBOTSTXT_OBEY = False
 # Set settings whose default value is deprecated to a future-proof value
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
+
+IMAGES_STORE = './img'
+IMAGES_EXPIRES = 0
