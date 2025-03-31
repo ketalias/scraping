@@ -1,0 +1,10 @@
+deploy.py
+news_scrapping_lab.egg-info/PKG-INFO
+news_scrapping_lab.egg-info/SOURCES.txt
+news_scrapping_lab.egg-info/dependency_links.txt
+news_scrapping_lab.egg-info/entry_points.txt
+news_scrapping_lab.egg-info/top_level.txt
+spiders/__init__.py
+spiders/zakarpattya.py
+spiders/zakarpattya_css.py
+spiders/zakarpattya_xpath.py

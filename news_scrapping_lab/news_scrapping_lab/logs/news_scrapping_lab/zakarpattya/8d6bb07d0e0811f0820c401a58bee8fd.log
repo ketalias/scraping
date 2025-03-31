@@ -1,0 +1,1568 @@
+2025-03-31 11:17:18 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: news_scrapping_lab)
+2025-03-31 11:17:18 [scrapy.utils.log] INFO: Versions: lxml 5.3.1.0, libxml2 2.11.7, cssselect 1.3.0, parsel 1.10.0, w3lib 2.3.1, Twisted 24.11.0, Python 3.12.6 (tags/v3.12.6:a4a2d2b, Sep  6 2024, 20:11:23) [MSC v.1940 64 bit (AMD64)], pyOpenSSL 25.0.0 (OpenSSL 3.4.1 11 Feb 2025), cryptography 44.0.2, Platform Windows-11-10.0.26100-SP0
+2025-03-31 11:17:18 [scrapy.addons] INFO: Enabled addons:
+[]
+2025-03-31 11:17:18 [asyncio] DEBUG: Using selector: SelectSelector
+2025-03-31 11:17:18 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-03-31 11:17:18 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-03-31 11:17:18 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2025-03-31 11:17:18 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2025-03-31 11:17:18 [scrapy.extensions.telnet] INFO: Telnet Password: b27a76371e1ea333
+2025-03-31 11:17:18 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2025-03-31 11:17:18 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'news_scrapping_lab',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'C:\\Users\\Леся\\scraping\\news_scrapping_lab\\news_scrapping_lab\\logs\\news_scrapping_lab\\zakarpattya\\8d6bb07d0e0811f0820c401a58bee8fd.log',
+ 'NEWSPIDER_MODULE': 'news_scrapping_lab.spiders',
+ 'SPIDER_MODULES': ['news_scrapping_lab.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor',
+ 'USER_AGENT': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 '
+               '(KHTML, like Gecko) Chrome/110.0.0.0 Safari/537.36'}
+2025-03-31 11:17:18 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2025-03-31 11:17:18 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2025-03-31 11:17:18 [scrapy.middleware] INFO: Enabled item pipelines:
+['scrapy.pipelines.images.ImagesPipeline',
+ 'news_scrapping_lab.pipelines.NewsScrappingLabPipeline']
+2025-03-31 11:17:18 [scrapy.core.engine] INFO: Spider opened
+2025-03-31 11:17:19 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2025-03-31 11:17:19 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2025-03-31 11:17:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua> (referer: None)
+2025-03-31 11:17:20 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): zakarpattya.net.ua:443
+2025-03-31 11:17:21 [urllib3.connectionpool] DEBUG: https://zakarpattya.net.ua:443 "GET / HTTP/1.1" 200 29415
+2025-03-31 11:17:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/Politics> (referer: https://zakarpattya.net.ua)
+2025-03-31 11:17:22 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): zakarpattya.net.ua:443
+2025-03-31 11:17:23 [urllib3.connectionpool] DEBUG: https://zakarpattya.net.ua:443 "GET /Politics HTTP/1.1" 200 28593
+2025-03-31 11:17:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/Blogs> (referer: https://zakarpattya.net.ua)
+2025-03-31 11:17:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/Crime> (referer: https://zakarpattya.net.ua)
+2025-03-31 11:17:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/Anons> (referer: https://zakarpattya.net.ua)
+2025-03-31 11:17:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/Emergency> (referer: https://zakarpattya.net.ua)
+2025-03-31 11:17:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/Sports> (referer: https://zakarpattya.net.ua)
+2025-03-31 11:17:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Hungarian_State_Opera_House_in_Budapest.jpg> (referer: None)
+2025-03-31 11:17:23 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Hungarian_State_Opera_House_in_Budapest.jpg> referred in <None>
+2025-03-31 11:17:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/61047349_861478787554802_3598035541427224576_n-660x470.jpg> (referer: None)
+2025-03-31 11:17:24 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/61047349_861478787554802_3598035541427224576_n-660x470.jpg> referred in <None>
+2025-03-31 11:17:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/481920626_9082628621866349_10831721691171703_1.jpg> (referer: None)
+2025-03-31 11:17:24 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/481920626_9082628621866349_10831721691171703_1.jpg> referred in <None>
+2025-03-31 11:17:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/Miscellaneous> (referer: https://zakarpattya.net.ua)
+2025-03-31 11:17:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/Archive> (referer: https://zakarpattya.net.ua)
+2025-03-31 11:17:24 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): zakarpattya.net.ua:443
+2025-03-31 11:17:24 [urllib3.connectionpool] DEBUG: https://zakarpattya.net.ua:443 "GET /Blogs HTTP/1.1" 200 24302
+2025-03-31 11:17:24 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): zakarpattya.net.ua:443
+2025-03-31 11:17:25 [urllib3.connectionpool] DEBUG: https://zakarpattya.net.ua:443 "GET /Crime HTTP/1.1" 200 35464
+2025-03-31 11:17:25 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): zakarpattya.net.ua:443
+2025-03-31 11:17:25 [urllib3.connectionpool] DEBUG: https://zakarpattya.net.ua:443 "GET /Anons HTTP/1.1" 200 17614
+2025-03-31 11:17:25 [zakarpattya] ERROR: Error: No elements with class 'pubView' found on https://zakarpattya.net.ua/Anons
+2025-03-31 11:17:25 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): zakarpattya.net.ua:443
+2025-03-31 11:17:26 [urllib3.connectionpool] DEBUG: https://zakarpattya.net.ua:443 "GET /Emergency HTTP/1.1" 200 29851
+2025-03-31 11:17:26 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): zakarpattya.net.ua:443
+2025-03-31 11:17:27 [urllib3.connectionpool] DEBUG: https://zakarpattya.net.ua:443 "GET /Sports HTTP/1.1" 200 26646
+2025-03-31 11:17:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/Social> (referer: https://zakarpattya.net.ua)
+2025-03-31 11:17:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/Economy> (referer: https://zakarpattya.net.ua)
+2025-03-31 11:17:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/Culture> (referer: https://zakarpattya.net.ua)
+2025-03-31 11:17:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/481663692_1078770850930794_216457789692180479_1.jpg> (referer: None)
+2025-03-31 11:17:27 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/481663692_1078770850930794_216457789692180479_1.jpg> referred in <None>
+2025-03-31 11:17:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/ea3308cdbc3797dd.jpg> (referer: None)
+2025-03-31 11:17:27 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/ea3308cdbc3797dd.jpg> referred in <None>
+2025-03-31 11:17:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/Shandor-v-MZS-Uhorshchyny.jpg> (referer: None)
+2025-03-31 11:17:27 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/Shandor-v-MZS-Uhorshchyny.jpg> referred in <None>
+2025-03-31 11:17:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/Ukraina-uhorshchyna-IES.jpg> (referer: None)
+2025-03-31 11:17:27 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/Ukraina-uhorshchyna-IES.jpg> referred in <None>
+2025-03-31 11:17:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/KHymych.jpg> (referer: None)
+2025-03-31 11:17:27 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/KHymych.jpg> referred in <None>
+2025-03-31 11:17:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Hungarian_State_Opera_House_in_Budapest.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236416-Dyrektor-uhorskoi-opery-posperechavsia-z-poslom-Shandorom-cherez-vystup-proputinskoi-Netrebko',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Директор угорської опери посперечався з послом Шандором через '
+          'виступ пропутінської Нетребко'}
+2025-03-31 11:17:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/61047349_861478787554802_3598035541427224576_n-660x470.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236414-Polshcha-ta-Slovachchyna-dopomahatymut-Ukraini-v-ramkakh-Karpatskoi-initsiatyvy-rozvyvaty-Karpatskyi-rehion',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Польща та Словаччина допомагатимуть Україні в рамках Карпатської '
+          'ініціативи розвивати Карпатський регіон'}
+2025-03-31 11:17:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/481920626_9082628621866349_10831721691171703_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236370-Fedir-Shandor-iak-posol-vruchyv-virchi-hramoty-prezydentu-uhorshchyny-FOTO',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Федір Шандор як посол вручив вірчі грамоти президенту угорщини'}
+2025-03-31 11:17:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/481663692_1078770850930794_216457789692180479_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236345-Kolyshnii-holova-Mukachivskoi-RDA-i-netryvalyi-ochilnyk-Zakarpatskoi-oblasnoi-sluzhby-zainiatosti-Edhar-Tokar-ocholyv-zapovidnyi-departament-Mindovkillia',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Колишній голова Мукачівської РДА і "нетривалий" очільник '
+          'Закарпатської обласної служби зайнятості Едгар Токар очолив '
+          '"заповідний" департамент Міндовкілля'}
+2025-03-31 11:17:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/ea3308cdbc3797dd.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236203-Zastupnykom-holovy-Zakarpatskoi-OVA-stav-Rostyslav-Pritsak-FOTO',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Заступником голови Закарпатської ОВА став Ростислав Пріцак'}
+2025-03-31 11:17:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/Shandor-v-MZS-Uhorshchyny.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236263-Posol-Fedir-Shandor-vruchyv-kopii-virchykh-hramot-v-uhorskomu-MZS-FOTO',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Посол Федір Шандор вручив копії вірчих грамот в угорському МЗС'}
+2025-03-31 11:17:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/Ukraina-uhorshchyna-IES.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236129-ZMI-uhorshchyna-blokuie-pochatok-perehovoriv-pro-vstup-Ukrainy-do-IES-cherez-pytannia-natsmenshyn',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'ЗМІ: угорщина блокує початок переговорів про вступ України до ЄС '
+          'через питання нацменшин'}
+2025-03-31 11:17:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/KHymych.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236279-Sud-vidmovyv-prokuraturi-u-konfiskatsii-nerukhomosti-holovy-Verkhnokoropetskoi-hromady-KHymycha',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Суд відмовив прокуратурі у конфіскації нерухомості голови '
+          'Верхньокоропецької громади Химича'}
+2025-03-31 11:17:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/T.Averin.jpg> (referer: None)
+2025-03-31 11:17:27 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/T.Averin.jpg> referred in <None>
+2025-03-31 11:17:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/image-15.jpg> (referer: None)
+2025-03-31 11:17:27 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/image-15.jpg> referred in <None>
+2025-03-31 11:17:27 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): zakarpattya.net.ua:443
+2025-03-31 11:17:28 [urllib3.connectionpool] DEBUG: https://zakarpattya.net.ua:443 "GET /Miscellaneous HTTP/1.1" 200 27359
+2025-03-31 11:17:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': [],
+ 'link': 'https://zakarpattya.net.ua/News/236610-Turetska-hostynnist-tradytsii-shcho-pryiemno-dyvuiut-turystiv',
+ 'section': 'РІЗНЕ',
+ 'title': 'Турецька гостинність: традиції, що приємно дивують туристів'}
+2025-03-31 11:17:28 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): zakarpattya.net.ua:443
+2025-03-31 11:17:29 [urllib3.connectionpool] DEBUG: https://zakarpattya.net.ua:443 "GET /Archive HTTP/1.1" 200 19550
+2025-03-31 11:17:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/T.Averin.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236127-Kabmin-pohodyv-zvilnennia-T.Averina-z-posady-holovy-Tiachivskoi-RDA',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Кабмін погодив звільнення Т.Аверіна з посади голови Тячівської РДА'}
+2025-03-31 11:17:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/image-15.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236108-Eksholova-Tiachivskoi-RDA-chasiv-IAnukovycha-Shelever-unyk-vidpovidalnosti-za-makhinatsii-z-zemleiu',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Ексголова Тячівської РДА часів Януковича Шелевер уник '
+          'відповідальності за махінації з землею'}
+2025-03-31 11:17:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': [],
+ 'link': 'https://zakarpattya.net.ua/News/236591-Metalobaza-v-Kyievi-nadiinyi-postachalnyk-metaloprokatu',
+ 'section': 'РІЗНЕ',
+ 'title': 'Металобаза в Києві: надійний постачальник металопрокату'}
+2025-03-31 11:17:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': [],
+ 'link': 'https://zakarpattya.net.ua/News/236590-Avtomatychni-vymykachi-UEC-i-Gewiss-nadiinyi-zakhyst-elektromerezh',
+ 'section': 'РІЗНЕ',
+ 'title': 'Автоматичні вимикачі UEC і Gewiss: надійний захист електромереж'}
+2025-03-31 11:17:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': [],
+ 'link': 'https://zakarpattya.net.ua/News/236585-IAk-vybraty-riukzak-dlia-nanesennia-lohotypa-porady-dlia-biznesu',
+ 'section': 'РІЗНЕ',
+ 'title': 'Як вибрати рюкзак для нанесення логотипа: поради для бізнесу'}
+2025-03-31 11:17:29 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): zakarpattya.net.ua:443
+2025-03-31 11:17:30 [urllib3.connectionpool] DEBUG: https://zakarpattya.net.ua:443 "GET /Social HTTP/1.1" 200 None
+2025-03-31 11:17:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Archive>
+{'date': '2025',
+ 'image_urls': [],
+ 'link': 'https://zakarpattya.net.ua/News/236610-Turetska-hostynnist-tradytsii-shcho-pryiemno-dyvuiut-turystiv',
+ 'section': 'АРХІВ',
+ 'title': 'Турецька гостинність: традиції, що приємно дивують туристів'}
+2025-03-31 11:17:30 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): zakarpattya.net.ua:443
+2025-03-31 11:17:31 [urllib3.connectionpool] DEBUG: https://zakarpattya.net.ua:443 "GET /Economy HTTP/1.1" 200 27250
+2025-03-31 11:17:31 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): zakarpattya.net.ua:443
+2025-03-31 11:17:32 [urllib3.connectionpool] DEBUG: https://zakarpattya.net.ua:443 "GET /Culture HTTP/1.1" 200 27741
+2025-03-31 11:17:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/imgonline-com-ua-2to1-CEusRv8mVw7sp.jpg> (referer: None)
+2025-03-31 11:17:32 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/imgonline-com-ua-2to1-CEusRv8mVw7sp.jpg> referred in <None>
+2025-03-31 11:17:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487308773_1196733812103297_9189035950508490068_1.jpg> (referer: None)
+2025-03-31 11:17:32 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487308773_1196733812103297_9189035950508490068_1.jpg> referred in <None>
+2025-03-31 11:17:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': [],
+ 'link': 'https://zakarpattya.net.ua/News/236584-OkHealth---novyi-internet-mahazyn-dlia-sportsmeniv-ta-aktyvnykh-liudei',
+ 'section': 'РІЗНЕ',
+ 'title': 'OkHealth - новий інтернет-магазин для спортсменів та активних людей'}
+2025-03-31 11:17:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': [],
+ 'link': 'https://zakarpattya.net.ua/News/236565-Vid-vidstezhennia-trafiku-do-optymizatsii-prodazhiv-iak-zastosovuvaty-dani-analityky',
+ 'section': 'РІЗНЕ',
+ 'title': 'Від відстеження трафіку до оптимізації продажів: як застосовувати '
+          'дані аналітики'}
+2025-03-31 11:17:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': [],
+ 'link': 'https://zakarpattya.net.ua/News/236564-Aromat-dalekykh-kraiv-retsept-sousu-Karri',
+ 'section': 'РІЗНЕ',
+ 'title': 'Аромат далеких країв: рецепт соусу Каррі'}
+2025-03-31 11:17:32 [scrapy.core.scraper] WARNING: Dropped: Error processing item: list index out of range
+{'date': 'Сьогодні, 11:18',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/imgonline-com-ua-2to1-CEusRv8mVw7sp.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236614-U-Mukachevi-pianyi-Volkswagen-vrizavsia-v-betonnu-ohorozhu-FOTO',
+ 'section': 'АРХІВ',
+ 'title': 'У Мукачеві "п\'яний" Volkswagen врізався в бетонну огорожу (ФОТО)'}
+2025-03-31 11:17:32 [scrapy.core.scraper] WARNING: Dropped: Error processing item: list index out of range
+{'date': 'Сьогодні, 11:18',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/imgonline-com-ua-2to1-CEusRv8mVw7sp.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236614-U-Mukachevi-pianyi-Volkswagen-vrizavsia-v-betonnu-ohorozhu-FOTO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'У Мукачеві "п\'яний" Volkswagen врізався в бетонну огорожу (ФОТО)'}
+2025-03-31 11:17:32 [scrapy.core.scraper] WARNING: Dropped: Error processing item: list index out of range
+{'date': 'Сьогодні, 02:14',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/487308773_1196733812103297_9189035950508490068_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236612-U-Chekhii-vnaslidok-sutychky-z-inshymy-ukraintsiamy-zahynuv-kolyshnii-viiskovyi-dobrovolets-iz-Zakarpattia-FOTO',
+ 'section': 'АРХІВ',
+ 'title': 'У Чехії внаслідок сутички з іншими українцями загинув колишній '
+          'військовий-доброволець із Закарпаття (ФОТО)'}
+2025-03-31 11:17:32 [scrapy.core.scraper] WARNING: Dropped: Error processing item: list index out of range
+{'date': 'Сьогодні, 02:14',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/487308773_1196733812103297_9189035950508490068_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236612-U-Chekhii-vnaslidok-sutychky-z-inshymy-ukraintsiamy-zahynuv-kolyshnii-viiskovyi-dobrovolets-iz-Zakarpattia-FOTO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'У Чехії внаслідок сутички з іншими українцями загинув колишній '
+          'військовий-доброволець із Закарпаття (ФОТО)'}
+2025-03-31 11:17:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/vogon_pozhezha_smert.jpg> (referer: None)
+2025-03-31 11:17:32 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/vogon_pozhezha_smert.jpg> referred in <None>
+2025-03-31 11:17:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/image-9.jpg> (referer: None)
+2025-03-31 11:17:32 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/image-9.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/imgonline-com-ua-2to1-O1q9zjAzNWq2n.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/imgonline-com-ua-2to1-O1q9zjAzNWq2n.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/cc2fe33248b48c69.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/cc2fe33248b48c69.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/bloggers/2025/1/small/473028384_8891649780954560_7831424176630494638_1.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/bloggers/2025/1/small/473028384_8891649780954560_7831424176630494638_1.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486666691_1094728739334715_7868845041752738613_n.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486666691_1094728739334715_7868845041752738613_n.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': [],
+ 'link': 'https://zakarpattya.net.ua/News/236526-Dlia-choho-potribna-prokladka-v-turbini-ta-koly-ii-varto-miniaty',
+ 'section': 'РІЗНЕ',
+ 'title': 'Для чого потрібна прокладка в турбіні та коли її варто міняти?'}
+2025-03-31 11:17:33 [scrapy.core.scraper] WARNING: Dropped: Error processing item: list index out of range
+{'date': 'Сьогодні, 11:49',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/vogon_pozhezha_smert.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236616-U-Berezovi-na-KHustshchyni-na-pozhezhi-v-budynku-zahynuv-71-richnyi-cholovik',
+ 'section': 'АРХІВ',
+ 'title': 'У Березові на Хустщині на пожежі в будинку загинув 71-річний '
+          'чоловік'}
+2025-03-31 11:17:33 [scrapy.core.scraper] WARNING: Dropped: Error processing item: list index out of range
+{'date': 'Сьогодні, 11:49',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/vogon_pozhezha_smert.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236616-U-Berezovi-na-KHustshchyni-na-pozhezhi-v-budynku-zahynuv-71-richnyi-cholovik',
+ 'section': 'НС',
+ 'title': 'У Березові на Хустщині на пожежі в будинку загинув 71-річний '
+          'чоловік'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/1/small/image-9.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235964-Eksrehional-i-eksOPZZHyst-Viacheslav-Shutko-oholosyv-pro-zapusk-novoho-telekanalu-na-Zakarpatti',
+ 'section': 'ПОЛІТИКА',
+ 'title': "Ексрегіонал і ексОПЗЖист В'ячеслав Шутко оголосив про запуск нового "
+          'телеканалу на Закарпатті'}
+2025-03-31 11:17:33 [scrapy.core.scraper] WARNING: Dropped: Error processing item: list index out of range
+{'date': 'Сьогодні, 11:30',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/imgonline-com-ua-2to1-O1q9zjAzNWq2n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236615-V-Uzhhorodi-povtorno-narkopianoho-ta-bezpravnoho-vodiia-Fiata-oshtrafuvaly-shche-na-92-tys.-hrn-FOTO',
+ 'section': 'АРХІВ',
+ 'title': 'В Ужгороді повторно наркоп\'яного та "безправного" водія "Фіата" '
+          'оштрафували ще на 92 тис. грн (ФОТО)'}
+2025-03-31 11:17:33 [scrapy.core.scraper] WARNING: Dropped: Error processing item: list index out of range
+{'date': 'Сьогодні, 11:30',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/imgonline-com-ua-2to1-O1q9zjAzNWq2n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236615-V-Uzhhorodi-povtorno-narkopianoho-ta-bezpravnoho-vodiia-Fiata-oshtrafuvaly-shche-na-92-tys.-hrn-FOTO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'В Ужгороді повторно наркоп\'яного та "безправного" водія "Фіата" '
+          'оштрафували ще на 92 тис. грн (ФОТО)'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/1/small/cc2fe33248b48c69.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235734-Kabmin-pohodyv-pryznachennia-Tarasa-Haiduka-na-posadu-holovy-Uzhhorodskoi-RDA',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Кабмін погодив призначення Тараса Гайдука на посаду голови '
+          'Ужгородської РДА'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/bloggers/2025/1/small/473028384_8891649780954560_7831424176630494638_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/Blogs/235840-Moskovska-propahanda-na-Zakarpatti-na-pochatkakh-Chekhoslovatskoi-respubliky',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Московська пропаганда на Закарпатті на початках Чехословацької '
+          'республіки'}
+2025-03-31 11:17:33 [scrapy.core.scraper] WARNING: Dropped: Error processing item: list index out of range
+{'date': 'Сьогодні, 03:12',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486666691_1094728739334715_7868845041752738613_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236613-U-KHusti-vidbulysia-Khust-Half-Marathon-i-Chempionat-Ukrainy-z-bihu-po-shose-FOTO-VIDEO',
+ 'section': 'АРХІВ',
+ 'title': 'У Хусті відбулися Khust Half Marathon і Чемпіонат України з бігу по '
+          'шосе (ФОТО, ВІДЕО)'}
+2025-03-31 11:17:33 [scrapy.core.scraper] WARNING: Dropped: Error processing item: list index out of range
+{'date': 'Сьогодні, 03:12',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486666691_1094728739334715_7868845041752738613_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236613-U-KHusti-vidbulysia-Khust-Half-Marathon-i-Chempionat-Ukrainy-z-bihu-po-shose-FOTO-VIDEO',
+ 'section': 'СПОРТ',
+ 'title': 'У Хусті відбулися Khust Half Marathon і Чемпіонат України з бігу по '
+          'шосе (ФОТО, ВІДЕО)'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': [],
+ 'link': 'https://zakarpattya.net.ua/News/236502-Avtoobdzvin-iak-analitychnyi-instrument-iak-biznes-mozhe-zrozumity-svoikh-kliientiv-krashche',
+ 'section': 'РІЗНЕ',
+ 'title': 'Автообдзвін як аналітичний інструмент: як бізнес може зрозуміти '
+          'своїх клієнтів краще'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': [],
+ 'link': 'https://zakarpattya.net.ua/News/236501-IAk-vybraty-idealnu-morozylnu-kameru-dlia-vashoho-domu',
+ 'section': 'РІЗНЕ',
+ 'title': 'Як вибрати ідеальну морозильну камеру для вашого дому'}
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487441298_1056449923183402_1338322043273198936_1.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487441298_1056449923183402_1338322043273198936_1.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487327461_1060094742811425_3508749665378463137_1.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487327461_1060094742811425_3508749665378463137_1.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/zobrazhennya-whatsapp-data-2025-03-27-o-1615344c605d7d.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/zobrazhennya-whatsapp-data-2025-03-27-o-1615344c605d7d.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/whatsapp-image-2025-03-27-at-121101-2-1.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/whatsapp-image-2025-03-27-at-121101-2-1.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487866194_989687033341726_6374805688097689703_1.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487866194_989687033341726_6374805688097689703_1.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/sporudzhennia-vitriaka-v-Nyzhnikh-Vorotakh.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/sporudzhennia-vitriaka-v-Nyzhnikh-Vorotakh.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/487441298_1056449923183402_1338322043273198936_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236588-V-Uzhhorodi-shche-odnoho-povtorno-narkopianoho-i-bezpravnoho-vodiia-VAZa-oshtrafuvaly-na-57-tys.-hrn-FOTO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'В Ужгороді ще одного повторно наркоп\'яного і "безправного" водія '
+          'ВАЗа оштрафували на 57 тис. грн'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/487327461_1060094742811425_3508749665378463137_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236598-35-richnyi-turyst-z-Donechchyny-3-dni-blukav-vysokohiriam-na-Rakhivshchyni-zahubyv-u-potichku-vzuttia-i-obmorozyv-nohy-v-snihu-FOTO',
+ 'section': 'НС',
+ 'title': '35-річний "турист" з Донеччини 3 дні блукав високогір\'ям на '
+          'Рахівщині, загубив у потічку взуття і обморозив ноги в снігу'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/zobrazhennya-whatsapp-data-2025-03-27-o-1615344c605d7d.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236587-Na-Rakhivshchyni-zatrymaly-torhovtsia-vybukhivkoiu-ta-zbroieiu-FOTO-VIDEO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'На Рахівщині затримали торговця вибухівкою та зброєю'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/whatsapp-image-2025-03-27-at-121101-2-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236586-U-Mukachevi-zatrymaly-narkotorhovtsia-retsydyvista-FOTO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'У Мукачеві затримали наркоторговця-рецидивіста'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/487866194_989687033341726_6374805688097689703_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236607-U-Tysi-vyiavyly-shche-odnoho-potopelnyka-FOTO-VIDEO',
+ 'section': 'НС',
+ 'title': 'У Тисі виявили ще одного потопельника'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Archive>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/487866194_989687033341726_6374805688097689703_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236607-U-Tysi-vyiavyly-shche-odnoho-potopelnyka-FOTO-VIDEO',
+ 'section': 'АРХІВ',
+ 'title': 'У Тисі виявили ще одного потопельника'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/sporudzhennia-vitriaka-v-Nyzhnikh-Vorotakh.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236599-Na-Zakarpatti-pid-chas-sporudzhennia-pershoho-vitriaka-Vitrianykh-parkiv-Ukrainy-samoskyd-zadavyv-cholovika',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'На Закарпатті під час спорудження першого вітряка "Вітряних парків '
+          'України" самоскид задавив чоловіка'}
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/telefonnyi-shakhrai-55.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/telefonnyi-shakhrai-55.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha-v-Uzhhorodi-97.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha-v-Uzhhorodi-97.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha_vohon-1-51.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha_vohon-1-51.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/zobrazennia-whatsapp-data-2025-03-27-o-083900-422200ad-kopiia.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/zobrazennia-whatsapp-data-2025-03-27-o-083900-422200ad-kopiia.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/1.jpg-14.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/1.jpg-14.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/459970584_955065829990197_2478427752177074649_1.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/459970584_955065829990197_2478427752177074649_1.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/zobrazennia-viber-2025-03-25-08-37-51-888.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/zobrazennia-viber-2025-03-25-08-37-51-888.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/HRVI_covid-19_-na-12-tyzhden.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/HRVI_covid-19_-na-12-tyzhden.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Archive>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/telefonnyi-shakhrai-55.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236608-Shakhrai-z-Uzhhoroda-pid-vyhliadom-pratsivnyka-banku-vymanyv-u-kharkivianky-maizhe-20-tys.-hrn',
+ 'section': 'АРХІВ',
+ 'title': 'Шахрай з Ужгорода під виглядом працівника банку виманив у '
+          "харків'янки майже 20 тис. грн"}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/telefonnyi-shakhrai-55.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236608-Shakhrai-z-Uzhhoroda-pid-vyhliadom-pratsivnyka-banku-vymanyv-u-kharkivianky-maizhe-20-tys.-hrn',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'Шахрай з Ужгорода під виглядом працівника банку виманив у '
+          "харків'янки майже 20 тис. грн"}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha-v-Uzhhorodi-97.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236593-V-Uzhhorodi-na-pozhezhi-v-kvartyri-travmuvalysia-3-liudei-ONOVLENO-FOTO',
+ 'section': 'НС',
+ 'title': 'В Ужгороді на пожежі в квартирі травмувалися 3 людей'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha_vohon-1-51.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236594-U-Vilshanakh-na-KHustshchyni-zhoriv-budynok',
+ 'section': 'НС',
+ 'title': 'У Вільшанах на Хустщині згорів будинок'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/zobrazennia-whatsapp-data-2025-03-27-o-083900-422200ad-kopiia.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236583-U-Liakhivtsiakh-na-Uzhhorodshchyni-hasyly-pozhezhu-v-kotelni-prybudovanii-do-budynku-FOTO',
+ 'section': 'НС',
+ 'title': 'У Ляхівцях на Ужгородщині гасили пожежу в котельні, прибудованій до '
+          'будинку'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/1.jpg-14.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236572-Na-pozhezhi-u-Vydrychtsi-na-Rakhivshchyni-vyiavyly-tilo-vlasnyka-budynku-FOTO',
+ 'section': 'НС',
+ 'title': 'На пожежі у Видричці на Рахівщині виявили тіло власника будинку'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/459970584_955065829990197_2478427752177074649_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236604-ZHytel-Bilyna-na-Rakhivshchyni-iakyi-kulakamy-zabyv-do-smerti-spivmeshkanku-provede-7-rokiv-za-gratamy-FOTO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'Житель Білина на Рахівщині, який кулаками забив до смерті '
+          'співмешканку, проведе 7 років за ґратами'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/zobrazennia-viber-2025-03-25-08-37-51-888.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236561-U-Dovhomu-na-KHustshchyni-na-pozhezhi-budynku-vyiavyly-tilo-80-richnoi-vlasnytsi-ONOVLENO-FOTO',
+ 'section': 'НС',
+ 'title': 'У Довгому на Хустщині на пожежі будинку виявили тіло 80-річної '
+          'власниці'}
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha-v-Berehovi.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha-v-Berehovi.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/IMG_9037.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/IMG_9037.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487529450_1065808685592538_3208887115409356580_n.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487529450_1065808685592538_3208887115409356580_n.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/DSC01951-1.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/DSC01951-1.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/024-scaled.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/024-scaled.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/imgonline-com-ua-2to1-9qcYPK6jR20SG.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/imgonline-com-ua-2to1-9qcYPK6jR20SG.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/j7P2BNeITKLc75scdM7oM6eM0NLcvHPfyQY6NIFs.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/j7P2BNeITKLc75scdM7oM6eM0NLcvHPfyQY6NIFs.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/photo_2024-09-26_19-20-21.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/photo_2024-09-26_19-20-21.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/HRVI_covid-19_-na-12-tyzhden.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236558-Na-Zakarpatti-za-tyzhden-kilkist-zvernen-z-HRVI-zmenshylasia-shche-na-126',
+ 'section': 'НС',
+ 'title': 'На Закарпатті за тиждень кількість звернень з ГРВІ зменшилася ще на '
+          '12,6%'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha-v-Berehovi.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236554-U-Berehovi-horiv-budynok-FOTO',
+ 'section': 'НС',
+ 'title': 'У Берегові горів будинок'}
+2025-03-31 11:17:33 [scrapy.core.scraper] WARNING: Dropped: Error processing item: list index out of range
+{'date': 'Сьогодні, 01:37',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/IMG_9037.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236611-Futbol.-Zymovym-chempionom-Zakarpattia-2025-stav-FK-Medeia-–-Nevytskyi-zamok-z-Onokivtsiv-FOTO',
+ 'section': 'АРХІВ',
+ 'title': 'Футбол. Зимовим чемпіоном Закарпаття-2025 став ФК "Медея – '
+          'Невицький замок" з Оноківців (ФОТО)'}
+2025-03-31 11:17:33 [scrapy.core.scraper] WARNING: Dropped: Error processing item: list index out of range
+{'date': 'Сьогодні, 01:37',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/IMG_9037.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236611-Futbol.-Zymovym-chempionom-Zakarpattia-2025-stav-FK-Medeia-–-Nevytskyi-zamok-z-Onokivtsiv-FOTO',
+ 'section': 'СПОРТ',
+ 'title': 'Футбол. Зимовим чемпіоном Закарпаття-2025 став ФК "Медея – '
+          'Невицький замок" з Оноківців (ФОТО)'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/487529450_1065808685592538_3208887115409356580_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236603-V-Uzhhorodi-prokhodyt-vidkrytyi-chempionat-Asotsiatsii-hyrovoho-sportu-Ukrainy-FOTO',
+ 'section': 'СПОРТ',
+ 'title': 'В Ужгороді проходить відкритий чемпіонат Асоціації гирьового спорту '
+          'України'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/DSC01951-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236541-Mukachivets-Oleh-KHalilov-zdobuv-hreko-rymsku-bronzu-na-chempionati-IEvropy-U-23-FOTO',
+ 'section': 'СПОРТ',
+ 'title': 'Мукачівець Олег Халілов здобув "греко-римську" "бронзу" на '
+          'чемпіонаті Європи U-23'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/024-scaled.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235559-Zelenskyi-pidpysav-ukaz-pro-pryznachennia-Shandora-poslom-v-uhorshchyni',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Зеленський підписав указ про призначення Шандора послом в угорщині'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/imgonline-com-ua-2to1-9qcYPK6jR20SG.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236576-Za-uchast-u-perepravlenni-za-kordon-odioznoho-zabudovnyka-Komarnytskoho-zvilneno-dvokh-pratsivnykiv-USR-v-Zakarpatskii-oblasti-ta-ikh-kerivnyka-Serhiia-KHymycha-ONOVLENO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'За участь у переправленні за кордон одіозного забудовника '
+          'Комарницького звільнено двох працівників УСР в Закарпатській '
+          'області та їх керівника Сергія Химича'}
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/j7P2BNeITKLc75scdM7oM6eM0NLcvHPfyQY6NIFs.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236580-Sud-u-Berehovi-umovno-pokarav-pensionera-za-rozbeshchennia-nepovnolitnoi-bo-toi-prymyryvsia-z-poterpiloiu',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'Суд у Берегові умовно "покарав" пенсіонера за розбещення '
+          'неповнолітньої, бо той "примирився" з потерпілою'}
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/pidozra-Hozdi.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/pidozra-Hozdi.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486669093_986992760277820_8745640236314066653_n.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486669093_986992760277820_8745640236314066653_n.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486577827_986879833622446_4200923203554660361_1.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486577827_986879833622446_4200923203554660361_1.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486562929_693283856562972_9051207512104096931_n.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486562929_693283856562972_9051207512104096931_n.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486469704_1054785383349856_9085195669242375467_1.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486469704_1054785383349856_9085195669242375467_1.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/lviv25_2025_03_24t144316.456.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/lviv25_2025_03_24t144316.456.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486471536_1080705174093470_3087577251958601264_1.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486471536_1080705174093470_3087577251958601264_1.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Komarnytskyi_Pokorba.jpg> (referer: None)
+2025-03-31 11:17:33 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Komarnytskyi_Pokorba.jpg> referred in <None>
+2025-03-31 11:17:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/photo_2024-09-26_19-20-21.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236578-VRP-poperedyla-zakarpatskoho-suddiu-Bysahu-iakyi-vkotre-zvilnyv-vodiia-vid-vidpovidalnosti-za-netvereze-keruvannia',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'ВРП "попередила" закарпатського суддю Бисагу, який вкотре звільнив '
+          'водія від відповідальності за нетверезе керування'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/pidozra-Hozdi.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236577-Kyivskyi-apeliatsiinyi-sud-otsinyv-vartist-svobody-naibilshoho-zakarpatskoho-zabudovnyka-Stepana-Hozdy-v-45-mln-hrn',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'Київський апеляційний суд оцінив вартість свободи найбільшого '
+          'закарпатського забудовника Степана Гозди в 4,5 млн грн'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486669093_986992760277820_8745640236314066653_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236575-Na-Tiachivshchyni-vpiimaly-perepravnyka-z-kliientom-FOTO-VIDEO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'На Тячівщині впіймали переправника з клієнтом'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486577827_986879833622446_4200923203554660361_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236574-Na-Zakarpatti-ukhyliant-zi-Lvova-za-$15-tys.-led-ne-potonuv-u-Tysi-bo-probyv-na-koliuchtsi-gumovyi-choven-vid-perepravnykiv-FOTO-VIDEO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'На Закарпатті "ухилянт" зі Львова за $15 тис. ледь не потонув у '
+          'Тисі, бо пробив на "колючці" ґумовий човен від переправників'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486562929_693283856562972_9051207512104096931_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236573-Maister-lisu-Lavkivskoho-lisnytstva-na-Mukachivshchyni-ne-pobachyv-nezakonni-rubky-derev-na-ponad-52-mln-hrn-FOTO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'Майстер лісу Лавківського лісництва на Мукачівщині "не побачив" '
+          'незаконні рубки дерев на понад 5,2 млн грн'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486469704_1054785383349856_9085195669242375467_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236569-Zatrymanoho-v-Nyzhnikh-Vorotakh-pianoho-ta-bezpravnoho-vodiia-VAZa-oshtrafuvaly-shche-na-ponad-57-tys.-hrn-FOTO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'Затриманого в Нижніх Воротах п\'яного та "безправного" водія ВАЗа '
+          'оштрафували ще на понад 57 тис. грн'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/lviv25_2025_03_24t144316.456.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236566-U-Lvovi-zatrymaly-dvokh-zakarpattsiv-iaki-planuvaly-pidirvaty-avtivku-pryznachenu-dlia-viiskovykh-FOTO',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'У Львові затримали двох закарпатців, які планували підірвати '
+          'автівку, призначену для військових'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486471536_1080705174093470_3087577251958601264_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236562-Kerivnyku-pryvatnoho-pidpryiemstva-povidomyly-pro-pidozru-v-zavolodinni-ponad-38-mln-hrn-na-remonti-pokryttia-aerodromu-Uzhhorod',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'Керівнику приватного підприємства повідомили про підозру в '
+          'заволодінні понад 3,8 млн грн на ремонті покриття аеродрому '
+          '"Ужгород"'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Crime>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Komarnytskyi_Pokorba.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236559-Deputata-Zakarpatskoi-oblrady-Pokorbu-zatrymaly-za-perepravlennia-za-kordon-kyivskoho-zabudovnyka-Komarnytskoho',
+ 'section': 'КРИМІНАЛ',
+ 'title': 'Депутата Закарпатської облради Покорбу затримали за переправлення '
+          'за кордон київського забудовника Комарницького'}
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/483797091_24042723211996023_20795390764321582_1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/483797091_24042723211996023_20795390764321582_1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486479363_1056866486467584_8920221541129886919_n.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486479363_1056866486467584_8920221541129886919_n.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/483849958_957279689909915_6758225755882413698_n.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/483849958_957279689909915_6758225755882413698_n.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/481000454_1043479197825487_1148495377375290062_n.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/481000454_1043479197825487_1148495377375290062_n.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/image-54.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/image-54.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/maxresdefault-9.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/maxresdefault-9.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha_vohon-46-47.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha_vohon-46-47.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha_vohon-1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha_vohon-1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/zmi/2024/11/small/336983821_607772150803501_3364460653681283202_n.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/zmi/2024/11/small/336983821_607772150803501_3364460653681283202_n.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/photo_2025-03-22_20-16-43.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/photo_2025-03-22_20-16-43.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/nadutyi_orban.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/nadutyi_orban.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487172001_1059618129302874_8116092777388523670_n.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487172001_1059618129302874_8116092777388523670_n.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/magyarpeterorban-678x381.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/magyarpeterorban-678x381.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/IMG-20250326-WA0019-1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/IMG-20250326-WA0019-1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487342248_1102583728566633_5535593102589528042_1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487342248_1102583728566633_5535593102589528042_1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/483797091_24042723211996023_20795390764321582_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236471-V-Uzhhorodi-proide-Chempionat-Ukrainy-z-velosportu-MTB',
+ 'section': 'СПОРТ',
+ 'title': 'В Ужгороді пройде Чемпіонат України з велоспорту-МТБ'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486479363_1056866486467584_8920221541129886919_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236553-U-Bilkakh-na-KHustshchyni-horila-litnia-kukhnia-khliv-FOTO',
+ 'section': 'НС',
+ 'title': 'У Білках на Хустщині горіла літня кухня-хлів'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/483849958_957279689909915_6758225755882413698_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236460-TSohorich-na-Zakarpatti-vidbudutsia-vidrazu-chotyry-masshtabni-zabihy-FOTO',
+ 'section': 'СПОРТ',
+ 'title': 'Цьогоріч на Закарпатті відбудуться відразу чотири масштабні забіги'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/481000454_1043479197825487_1148495377375290062_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236299-V-Uzhhorodi-vidbuvsia-Kubok-Uzhhoroda-z-flah-futbolu-pam’iati-Danyla-Bohuslavskoho-FOTO',
+ 'section': 'СПОРТ',
+ 'title': 'В Ужгороді відбувся "Кубок Ужгорода з флаг-футболу" пам’яті Данила '
+          'Богуславського'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/image-54.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235473-Uzhhorodskyi-liubytel-russkoho-mira-unyk-realnoho-pokarannia-za-napolehlyvu-propahandu-komunizmu-ta-prorosiiski-publikatsii-FOTO',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Ужгородський любитель "русского міра" уник реального покарання за '
+          'наполегливу пропаганду комунізму та проросійські публікації'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/maxresdefault-9.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235518-KHto-pyliaie-Zakarpattia-Koshtovna-zemlia-po-druzhbi-z-ochilnykom-OVA-–-Bihus.info-VIDEO',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Хто пиляє Закарпаття? Коштовна земля "по дружбі" з очільником ОВА – '
+          'Bihus.info'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha_vohon-46-47.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236549-U-Brusturakh-na-Tiachivshchyni-zhoriv-mahazyn',
+ 'section': 'НС',
+ 'title': 'У Брустурах на Тячівщині згорів магазин'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/pozhezha_vohon-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236550-Na-vykhidni-zhorily-budynky-u-Kamianskomu-na-Berehivshchyni-ta-Bilkakh-na-KHustshchyni',
+ 'section': 'НС',
+ 'title': "На вихідні згоріли будинки у Кам'янському на Берегівщині та Білках "
+          'на Хустщині'}
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Annamari-Dancha.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Annamari-Dancha.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/zmi/2024/11/small/336983821_607772150803501_3364460653681283202_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/Zmi/235341-Kabmin-pohodyv-pryznachennia-Vasylia-Ivancha-pershym-zastupnykom-holovy-Zakarpatskoi-OVA',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Кабмін погодив призначення Василя Іванча першим заступником голови '
+          'Закарпатської ОВА'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/photo_2025-03-22_20-16-43.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236548-Znyk-prykordonnyk-Mukachivskoho-zahonu-sered-versii-rozhliadaiut-i-vtechu-za-kordon',
+ 'section': 'НС',
+ 'title': 'Зник прикордонник Мукачівського загону, серед версій розглядають і '
+          'втечу за кордон'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Archive>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/nadutyi_orban.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236609-U-orbana-nalashtovuiut-uhortsiv-proty-Ukrainy-v-IES-brekhneiu-i-manipuliatsiiamy',
+ 'section': 'АРХІВ',
+ 'title': 'У орбана налаштовують угорців проти України в ЄС брехнею й '
+          'маніпуляціями'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/nadutyi_orban.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236609-U-orbana-nalashtovuiut-uhortsiv-proty-Ukrainy-v-IES-brekhneiu-i-manipuliatsiiamy',
+ 'section': 'РІЗНЕ',
+ 'title': 'У орбана налаштовують угорців проти України в ЄС брехнею й '
+          'маніпуляціями'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/487172001_1059618129302874_8116092777388523670_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236606-Petytsiia-pro-vetuvannia-skandalnoho-zakonu-pro-zemliu-shvydko-nabrala-potribnu-kilkist-pidpysiv',
+ 'section': 'РІЗНЕ',
+ 'title': 'Петиція про ветування скандального закону про землю швидко набрала '
+          'потрібну кількість підписів'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/magyarpeterorban-678x381.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236601-Partiia-orbana-vidstaie-vid-holovnykh-oponentiv-na-5-vidsotkovykh-punktiv',
+ 'section': 'РІЗНЕ',
+ 'title': 'Партія орбана відстає від головних опонентів на 5 відсоткових '
+          'пунктів'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/IMG-20250326-WA0019-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236595-Na-Uzhhorodshchyni-78-richnyi-providnyk-viv-2-kh-zakarpattsiv-ukhyliantiv-lisom-do-Slovachchyny-FOTO',
+ 'section': 'РІЗНЕ',
+ 'title': 'На Ужгородщині 78-річний провідник вів 2-х закарпатців-"ухилянтів" '
+          'лісом до Словаччини'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/487342248_1102583728566633_5535593102589528042_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236602-U-Mukachevi-u-vivtorok-poproshchaiutsia-z-polehlym-na-viini-z-rosiieiu-Andriiem-Rozhau-FOTO',
+ 'section': 'СОЦІО',
+ 'title': 'У Мукачеві у вівторок попрощаються з полеглим на війні з росією '
+          'Андрієм Розгау'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Annamari-Dancha.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236298-Zakarpatka-Dancha-pokazala-naikrashchyi-rezultat-sezonu-na-etapi-Kubku-svitu-zi-snoubordynhu',
+ 'section': 'СПОРТ',
+ 'title': 'Закарпатка Данча показала найкращий результат сезону на етапі Кубку '
+          'світу зі сноубордингу'}
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/soniachna-elektrostantsiia.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/soniachna-elektrostantsiia.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487427084_960100132967489_1893381923339838604_n.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487427084_960100132967489_1893381923339838604_n.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486614388_1055580029927397_8639179264572041161_1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486614388_1055580029927397_8639179264572041161_1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/11/small/photo_2024-11-26_18-19-30.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/11/small/photo_2024-11-26_18-19-30.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/photo_2025-03-22_13-27-47-1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/photo_2025-03-22_13-27-47-1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/480906350_1038139521692788_4891872205607524377_n.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/480906350_1038139521692788_4891872205607524377_n.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Retkliff-u-senati.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Retkliff-u-senati.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/opytuvannia-KMIS-1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/opytuvannia-KMIS-1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/soniachna-elektrostantsiia.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236560-Aktyvne-budivnytstvo-soniachnykh-elektrostantsii-rozbalansuvalo-enerhosystemu-Ukrainy',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Активне будівництво сонячних електростанцій розбалансувало '
+          'енергосистему України'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/487427084_960100132967489_1893381923339838604_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236605-Vyznacheno-peremozhtsiv-teatralnoho-festyvaliu-Uzhhorodskyi-Berezil-FOTO',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'Визначено переможців театрального фестивалю "Ужгородський Березіль"'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486614388_1055580029927397_8639179264572041161_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236600-WWF-Ukraina-vystupaie-proty-budivnytstva-lisovoi-avtodorohy-v-mezhakh-lisnytstv-filii-Uzhhorodske-lisove-hospodarstvo-DP-Lisy-Ukrainy',
+ 'section': 'СОЦІО',
+ 'title': 'WWF-Україна виступає проти будівництва лісової автодороги в межах '
+          'лісництв філії "Ужгородське лісове господарство" ДП "Ліси України"'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/11/small/photo_2024-11-26_18-19-30.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235307-Na-preskonferentsii-v-IA-Interfaks-Ukraina-rozpovily-pro-zlovzhyvannia-vysokoposadovtsiv-ta-masshtabnu-skhemu-rozkradannia-zemel-na-Zakarpatti-VIDEO',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'На пресконференції в ІА "Інтерфакс-Україна" розповіли про '
+          '"зловживання високопосадовців" та "масштабну схему розкрадання '
+          'земель на Закарпатті"'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/photo_2025-03-22_13-27-47-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236543-U-Poroshkovi-na-Uzhhorodshchyni-20-richnyi-vodii-Folksvagena-z-Turia-Poliany-smertelno-travmuvav-59-richnoho-cholovika-FOTO',
+ 'section': 'НС',
+ 'title': 'У Порошкові на Ужгородщині 20-річний водій "Фольксваґена" з Тур\'я '
+          'Поляни смертельно травмував 59-річного чоловіка'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/480906350_1038139521692788_4891872205607524377_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236208-V-Uzhhorodi-prokhodyt-vidkrytyi-chempionat-Zakarpatskoi-oblasti-zi-zmishanykh-boiovykh-mystetstv-FOTO',
+ 'section': 'СПОРТ',
+ 'title': 'В Ужгороді проходить відкритий чемпіонат Закарпатської області зі '
+          'змішаних бойових мистецтв'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Retkliff-u-senati.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236570-Ukraintsi-voiuvatymut-holiruch-iakshcho-umovy-peremovyn-ikh-ne-vlashtovuvatymut-–-dyrektor-TSRU',
+ 'section': 'РІЗНЕ',
+ 'title': 'Українці воюватимуть голіруч, якщо умови перемовин їх не '
+          'влаштовуватимуть – директор ЦРУ'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/opytuvannia-KMIS-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236568-82-ukraintsiv-za-te-shchob-prodovzhuvaty-borotbu-z-rf-navit-iakshcho-ne-bude-pidtrymky-SShA',
+ 'section': 'РІЗНЕ',
+ 'title': '82% українців за те, щоб продовжувати боротьбу з рф навіть якщо не '
+          'буде підтримки США'}
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/IMG-07c52ba8ad165ca90c27b9912d4435a7-V.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/IMG-07c52ba8ad165ca90c27b9912d4435a7-V.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487167649_122214447470178974_2477342730178763117_n.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487167649_122214447470178974_2477342730178763117_n.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486721078_1370042491261593_8366567012988665089_1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486721078_1370042491261593_8366567012988665089_1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/image-26.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/image-26.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/5.jpg-9.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/5.jpg-9.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486859855_3304805079669332_5073186972493647408_1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486859855_3304805079669332_5073186972493647408_1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/HOTOVNE-FOTO-89.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/HOTOVNE-FOTO-89.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/f24751df-ae53fda52279cbe9849066693285675b.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/f24751df-ae53fda52279cbe9849066693285675b.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/IMG-07c52ba8ad165ca90c27b9912d4435a7-V.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236597-U-Kalynakh-na-Tiachivshchyni-kharkivskyi-zabudovnyk-nezakonno-pochav-roboty-zi-sporudzhennia-HES-FOTO-VIDEO',
+ 'section': 'СОЦІО',
+ 'title': 'У Калинах на Тячівщині харківський забудовник незаконно почав '
+          'роботи зі спорудження ГЕС'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/487167649_122214447470178974_2477342730178763117_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236596-V-Uzhhorodi-shche-ne-vidkrytyi-McDonalds-pokaraly-za-neprodumanu-vyvisku-FOTO',
+ 'section': 'СОЦІО',
+ 'title': 'В Ужгороді ще не відкритий McDonald\'s покарали за "непродуману" '
+          'вивіску'}
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/23-3-1024x687.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/23-3-1024x687.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486703783_957912799852889_2961630833236216194_n.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486703783_957912799852889_2961630833236216194_n.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/12c9dc3-5fc7461612892-630-360-1524671873-1848jpg.jpeg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/12c9dc3-5fc7461612892-630-360-1524671873-1848jpg.jpeg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/Marafon-819x1024-1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/Marafon-819x1024-1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/566c9050c0e3c44304c7879cd3b3d5407ec027dd.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/566c9050c0e3c44304c7879cd3b3d5407ec027dd.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487064482_1094628412704952_1205076063235221961_1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/487064482_1094628412704952_1205076063235221961_1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/11/small/ivan-tulyk_large-40.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/11/small/ivan-tulyk_large-40.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/1742629932_fb_img_1742629614341-2.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/1742629932_fb_img_1742629614341-2.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486721078_1370042491261593_8366567012988665089_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236592-Na-viini-z-rosiieiu-polih-57-richnyi-Ivan-Pychkar-z-Rodnykivky-na-Mukachivshchyni-FOTO',
+ 'section': 'СОЦІО',
+ 'title': 'На війні з росією поліг 57-річний Іван Пичкар з Родниківки на '
+          'Мукачівщині'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/image-26.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236589-Sprava-Komarnytskoho-Zvilnenyi-nachalnyk-USR-v-Zakarpatskii-oblasti-KHymych-zberihaie-$95-tys.-hotivkoiu',
+ 'section': 'СОЦІО',
+ 'title': 'Справа Комарницького: Звільнений начальник УСР в Закарпатській '
+          'області Химич зберігає $95 тис. готівкою'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/5.jpg-9.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236582-U-Bushtyni-na-Tiachivshchyni-hasiachy-pozhezhu-v-nadvirnii-sporudi-vriatuvaly-dva-budynky-ta-litniu-kukhniu-poruch-FOTO',
+ 'section': 'СОЦІО',
+ 'title': 'У Буштині на Тячівщині, гасячи пожежу в надвірній споруді, '
+          'врятували два будинки та літню кухню поруч'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486859855_3304805079669332_5073186972493647408_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236581-Na-Zaporizhzhi-polih-Volodymyr-Zeldi-z-Teresvy-na-Tiachivshchyni-FOTO',
+ 'section': 'СОЦІО',
+ 'title': 'На Запоріжжі поліг Володимир Зелді з Тересви на Тячівщині'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/HOTOVNE-FOTO-89.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236579-Uzhhorodski-lisivnyky-buduvatymut-dorohu-pid-vitriaky-na-Rivnii-cherez-pralisy-DOKUMENTY',
+ 'section': 'СОЦІО',
+ 'title': 'Ужгородські лісівники будуватимуть дорогу під вітряки на Рівній '
+          'через праліси'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/f24751df-ae53fda52279cbe9849066693285675b.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236412-Uriad-zareiestruvav-12-i-na-Zakarpatti-industrialnyi-park-Karpaty-u-Chynadiiovi',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Уряд зареєстрував 12-й на Закарпатті індустріальний парк "Карпати" '
+          'у Чинадійові'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/23-3-1024x687.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236514-Oholosheno-peremozhtsiv-KHIV-Vidkrytoho-festyvaliu-konkursu-striletskoi-pisni-Krasne-pole-u-KHusti-FOTO',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'Оголошено переможців ХІV Відкритого фестивалю-конкурсу стрілецької '
+          'пісні "Красне поле" у Хусті'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486703783_957912799852889_2961630833236216194_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236567-U-halerei-Uzhhorod-vidkryly-vystavku-robit-uchasnykiv-Molodizhnoho-ob’iednannia-Zakarpatskoi-orhanizatsii-NSKHU-FOTO',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'У галереї "Ужгород" відкрили виставку робіт учасників Молодіжного '
+          'об’єднання Закарпатської організації НСХУ'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/12c9dc3-5fc7461612892-630-360-1524671873-1848jpg.jpeg'],
+ 'link': 'https://zakarpattya.net.ua/News/236545-siiiarto-vzhe-manipuliuie-povernenniam-prav-uhortsiv-Zakarpattia-dlia-blokuvannia-vstupu-Ukrainy-v-IES',
+ 'section': 'РІЗНЕ',
+ 'title': 'сійярто вже маніпулює "поверненням прав" угорців Закарпаття для '
+          'блокування вступу України в ЄС'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/Marafon-819x1024-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236160-U-kvitni-v-Uzhhorodi-provedut-Uzhhorod-Half-Marathon-2025',
+ 'section': 'СПОРТ',
+ 'title': 'У квітні в Ужгороді проведуть Uzhhorod Half Marathon 2025'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/566c9050c0e3c44304c7879cd3b3d5407ec027dd.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236563-VR-pryiniala-doopratsovanyi-pislia-veto-prezydenta-zakon-pro-prymusove-vidchuzhennia-zemli-ta-budynkiv-v-Uzhhorodskomu-raioni-Zakarpatskoi-oblasti',
+ 'section': 'СОЦІО',
+ 'title': 'ВР прийняла доопрацьований після вето президента закон про '
+          'примусове відчуження землі та будинків в Ужгородському районі '
+          'Закарпатської області'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/487064482_1094628412704952_1205076063235221961_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236571-Na-Sumshchyni-polih-prykordonnyk-Ruslan-Pynzaru-z-sela-Simer-Perechynskoi-hromady-FOTO',
+ 'section': 'СОЦІО',
+ 'title': 'На Сумщині поліг прикордонник Руслан Пинзару з села Сімер '
+          'Перечинської громади'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/11/small/ivan-tulyk_large-40.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235300-Nekorumpovanoho-rakhivskoho-suddiu-Tulyka-zvilniat-cherez-hromadianstvo-Rumunii',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'корумпованого рахівського суддю Тулика звільнять через громадянство '
+          'Румунії'}
+2025-03-31 11:17:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/1742629932_fb_img_1742629614341-2.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236542-FOTOFAKT.-U-Verkhnomu-Bystromu-na-KHustshchyni-vantazhivka-vletila-u-shkilnyi-dvir',
+ 'section': 'НС',
+ 'title': 'ФОТОФАКТ. У Верхньому Бистрому на Хустщині вантажівка влетіла у '
+          'шкільний двір'}
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Serhii-Lazoryk-1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Serhii-Lazoryk-1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/produktu_harch_cinu-1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/produktu_harch_cinu-1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/1.jpg-13.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/1.jpg-13.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/476930651_1065249982300008_7644989820652181743_1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/476930651_1065249982300008_7644989820652181743_1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/484862454_18261301456287994_3669747364703889366_1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/484862454_18261301456287994_3669747364703889366_1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Social-Media-kopyia-37-1-1.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Social-Media-kopyia-37-1-1.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/smert-turysta.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/smert-turysta.jpg> referred in <None>
+2025-03-31 11:17:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/11/small/image-45.jpg> (referer: None)
+2025-03-31 11:17:34 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/11/small/image-45.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Serhii-Lazoryk-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236552-U-vivtorok-v-Uzhhorodi-poproshchaiutsia-z-polehlym-zakhysnykom-Serhiiem-Lazorykom-FOTO',
+ 'section': 'СОЦІО',
+ 'title': 'У вівторок в Ужгороді попрощаються з полеглим захисником Сергієм '
+          'Лазориком'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/produktu_harch_cinu-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236556-Na-Zakarpatti-u-liutomu-2025-ho-porivniano-z-hrudnem-2024-ho-tsiny-na-produkty-kharchuvannia-ta-bezalkoholni-napoi-zrosly-na-26',
+ 'section': 'СОЦІО',
+ 'title': 'На Закарпатті у лютому 2025-го порівняно з груднем 2024-го ціни на '
+          'продукти харчування та безалкогольні напої зросли на 2,6%'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/1.jpg-13.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236533-V-Uzhhorodi-horiv-salon-vantazhivky-IVECO-68-richnyi-vodii-otrymav-opiky-50-tila-ONOVLENO-FOTO',
+ 'section': 'НС',
+ 'title': 'В Ужгороді горів салон вантажівки IVECO, 68-річний водій отримав '
+          'опіки 50% тіла'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/476930651_1065249982300008_7644989820652181743_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236093-U-Mukachevi-vidbudetsia-chempionat-Ukrainy-z-khortynhu',
+ 'section': 'СПОРТ',
+ 'title': 'У Мукачеві відбудеться чемпіонат України з хортингу'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/484862454_18261301456287994_3669747364703889366_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236510-V-Uzhhorodi-pokazhutVypadkovosti-ta-monokhromy-Tiberiia-Silvashi',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'В Ужгороді покажуть"Випадковості та монохроми" Тіберія Сільваші'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Social-Media-kopyia-37-1-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236411-Lideramy-po-splati-turystychnoho-zboru-na-Zakarpatti-v-potochnomu-rotsi-zalyshaiutsia-Poliana-Baranyntsi-ta-Uzhhorod',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Лідерами по сплаті туристичного збору на Закарпатті в поточному '
+          'році залишаються Поляна, Баранинці та Ужгород'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/smert-turysta.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236534-U-horakh-na-Rakhivshchyni-pomer-56-richnyi-turyst-zi-Lvova-ONOVLENO-VIDEO',
+ 'section': 'НС',
+ 'title': 'У горах на Рахівщині помер 56-річний турист зі Львова'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Politics>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/11/small/image-45.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235143-Moskovskopravoslavnomu-bloheru-z-KHustshchyny-prysudyly-shtraf-za-rozpaliuvannia-relihiinoi-vorozhnechi',
+ 'section': 'ПОЛІТИКА',
+ 'title': 'Московськоправославному блогеру з Хустщини присудили штраф за '
+          'розпалювання релігійної ворожнечі'}
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/IAnosh-Boka.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/IAnosh-Boka.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/480555933_122212502264226004_793822903618163126_n-2.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/480555933_122212502264226004_793822903618163126_n-2.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/oudpa8jz9me-bj5itcciafmrowgieddb.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/oudpa8jz9me-bj5itcciafmrowgieddb.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Prezentatsiia-zbirky-Novhradi-Letso-1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Prezentatsiia-zbirky-Novhradi-Letso-1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/4.jpg-9.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/4.jpg-9.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/476513693_18051148478134582_9014982605940646852_1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/476513693_18051148478134582_9014982605940646852_1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/orban_veto.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/orban_veto.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486180322_1053428803485514_6517031572072444485_1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486180322_1053428803485514_6517031572072444485_1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/2025_02_24_0055.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/2025_02_24_0055.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/IAnosh-Boka.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236531-uhorshchyna-khoche-shchob-Ukraina-bula-bufernoiu-zonoiu-mizh-IES-i-rf-de-vse-mozhna-robyty-tilky-zi-skhvalennia-putina',
+ 'section': 'РІЗНЕ',
+ 'title': 'угорщина хоче, щоб Україна була "буферною зоною" між ЄС і рф, де '
+          'все можна робити тільки зі "схвалення путіна"'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/480555933_122212502264226004_793822903618163126_n-2.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236551-Profilna-komisiia-Zakarpatskoi-oblrady-pidtrymala-zberezhennia-Chornykh-ozer-v-Uzhhorodi-FOTO',
+ 'section': 'СОЦІО',
+ 'title': 'Профільна комісія Закарпатської облради підтримала збереження '
+          'Чорних озер в Ужгороді'}
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/tsiny.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/tsiny.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Afisha_zeloartagroua_pysanka-1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Afisha_zeloartagroua_pysanka-1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/485272726_1051071277054600_1873950295337528069_1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/485272726_1051071277054600_1873950295337528069_1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/Kalynychenko_1111.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/Kalynychenko_1111.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Meloni_NATO.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Meloni_NATO.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/485968464_1088096773331245_2094302724029311970_n.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/485968464_1088096773331245_2094302724029311970_n.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/zobrazhennya_viber_2025-02-13_10-53-15-604-850x560.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/zobrazhennya_viber_2025-02-13_10-53-15-604-850x560.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/oudpa8jz9me-bj5itcciafmrowgieddb.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236375-Kabmin-zareiestruvav-u-Svaliavi-11-i-na-Zakarpatti-industrialnyi-park-SOLVA-TEKH',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Кабмін зареєстрував у Сваляві 11-й на Закарпатті індустріальний '
+          'парк "СОЛЬВА-ТЕХ"'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Prezentatsiia-zbirky-Novhradi-Letso-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236508-V-Uzhhorodi-prezentuiut-debiutnu-zbirku-Viktora-Novhradi-Letso-Kavalky-dushi',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'В Ужгороді презентують дебютну збірку Віктора Новграді-Лецо '
+          '"Кавалки душі"'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/4.jpg-9.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236519-Na-pozhezhi-v-Solotvyni-na-Tiachivshchyni-zahynuv-cholovik-ONOVLENO-FOTO',
+ 'section': 'НС',
+ 'title': 'На пожежі в Солотвині на Тячівщині загинув чоловік'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/476513693_18051148478134582_9014982605940646852_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236034-Zakarpatka-Annamari-Dancha-stala-absoliutnoiu-chempionkoiu-Vidkrytoho-chempionatu-Ukrainy-zi-snoubordynhu-FOTO',
+ 'section': 'СПОРТ',
+ 'title': 'Закарпатка Аннамарі Данча стала абсолютною чемпіонкою Відкритого '
+          'чемпіонату України зі сноубордингу'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/orban_veto.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236529-Podolaty-orbana-Zelenskyi-prosyt-IES-znaity-instrument-proty-blokuvannia-rishen-dlia-Ukrainy',
+ 'section': 'РІЗНЕ',
+ 'title': '"Подолати орбана": Зеленський просить ЄС знайти інструмент проти '
+          'блокування рішень для України'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486180322_1053428803485514_6517031572072444485_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236547-U-Mukachevi-patrulni-vyiavyly-vodiiku-pid-kaifom-a-v-pasazhyra-–-narkotyky-FOTO',
+ 'section': 'СОЦІО',
+ 'title': 'У Мукачеві патрульні виявили водійку "під кайфом", а в пасажира – '
+          'наркотики'}
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/2025.03.20.-Roman-Pylyp-lektsiia-1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/2025.03.20.-Roman-Pylyp-lektsiia-1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/2025_02_24_0055.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236247-Mizh-Uzhhorodom-i-Chopom-de-paralelno-prokladut-ievrokoliiu-vzhe-perekladeno-35-km-shyrokoi-kolii-z-83-km-neobkhidnykh',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Між Ужгородом і Чопом, де паралельно прокладуть євроколію, вже '
+          'перекладено 3,5 км широкої колії з 8,3 км необхідних'}
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/2bcd55.jpeg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/2bcd55.jpeg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Velyka-Palad-%E2%80%93-Nodhodosh.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Velyka-Palad-%E2%80%93-Nodhodosh.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/83118b75-d340-4cbb-be72-82e1c3addcdf.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/83118b75-d340-4cbb-be72-82e1c3addcdf.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/1741796185-135.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/1741796185-135.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/474910958_493034450505869_6982145448560692297_1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/474910958_493034450505869_6982145448560692297_1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486081475_1095576925933980_895741921389145534_1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/486081475_1095576925933980_895741921389145534_1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/impulse.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/impulse.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/tsiny.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236207-U-sichni-na-Zakarpatti-tsiny-na-produkty-kharchuvannia-ta-bezalkoholni-napoi-zrosly-na-15',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'У січні на Закарпатті ціни на продукти харчування та безалкогольні '
+          'напої зросли на 1,5%'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Afisha_zeloartagroua_pysanka-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236499-V-Uzhhorodi-v--kramnytsi-kav’iarni-Zelo-vidbudetsia-maister-klas-z-pysankarstva',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'В Ужгороді, в  крамниці-кав’ярні "Zelo" відбудеться майстер-клас з '
+          'писанкарства'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Emergency>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/485272726_1051071277054600_1873950295337528069_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236524-Na-Mukachivshchyni-Toyota-vyletila-u-kiuvet-i-perekynulasia-na-dakh-FOTO',
+ 'section': 'НС',
+ 'title': 'На Мукачівщині Toyota вилетіла у кювет і перекинулася на дах'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/Kalynychenko_1111.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236001-FK-Mynai-ofitsiino-prezentuvav-novoho-holovnoho-trenera-–-Kalynychenka',
+ 'section': 'СПОРТ',
+ 'title': 'ФК "Минай" офіційно презентував нового головного тренера – '
+          'Калиниченка'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Miscellaneous>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Meloni_NATO.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236518-Premʼier-ministerka-Italii-vvazhaie-shcho-poshyrennia-statti-5-NATO-na-Ukrainu-dopomozhe-vykryty-blef-rosii',
+ 'section': 'РІЗНЕ',
+ 'title': 'Премʼєр-міністерка Італії вважає, що поширення статті 5 НАТО на '
+          'Україну допоможе викрити блеф росії'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/485968464_1088096773331245_2094302724029311970_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236546-Zakarpattia-vidvidala-ochilnytsia-Mindovkillia-Hrynchuk-nyshchennia-dovkillia-miniHESamy-i-vitriakamy-priorytetom-vizytu-ne-bulo-FOTO',
+ 'section': 'СОЦІО',
+ 'title': 'Закарпаття відвідала очільниця Міндовкілля Гринчук, нищення '
+          'довкілля мініГЕСами і вітряками пріоритетом візиту не було'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/zobrazhennya_viber_2025-02-13_10-53-15-604-850x560.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236120-Poznaiomyty-svit-iz-Vynamy-Sribnoi-Zemli-–-holovna-meta-HO-Asotsiatsii-vynohradariv-vynorobiv-ta-dystyliatoriv-Zakarpattia-–-Oleksandr-Harnovdii',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Познайомити світ із Винами Срібної Землі – головна мета ГО '
+          '"Асоціації виноградарів, виноробів та дистиляторів Закарпаття", – '
+          'Олександр Гарновдій'}
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/483525504_949160030728166_1585642375500452564_n.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/483525504_949160030728166_1585642375500452564_n.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/2025.03.20.-Roman-Pylyp-lektsiia-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236478-V-uzhhorodskomu-skanseni-vidbudetsia-lektsiia-maisterklas-pro-rehionalni-osoblyvosti-tradytsiinoi-pysanky-Zakarpattia',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'В ужгородському скансені відбудеться лекція-майстерклас про '
+          'регіональні особливості традиційної писанки Закарпаття'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/1/small/2bcd55.jpeg'],
+ 'link': 'https://zakarpattya.net.ua/News/235982-Mynai-vyznachyvsia-z-holovnym-kandydatom-na-post-holovnoho-trenera',
+ 'section': 'СПОРТ',
+ 'title': '"Минай" визначився з головним кандидатом на пост головного тренера'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Velyka-Palad-–-Nodhodosh.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236540-Na-Zakarpatti-na-kordoni-z-uhorshchynoiu-na-pochatku-kvitnia-zapratsiuie-novyi-punkt-propusku-Velyka-Palad-–-Nodhodosh',
+ 'section': 'СОЦІО',
+ 'title': 'На Закарпатті, на кордоні з угорщиною на початку квітня запрацює '
+          'новий пункт пропуску "Велика Паладь – Нодьгодош"'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/83118b75-d340-4cbb-be72-82e1c3addcdf.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236082-Zakarpatska-mytnytsia-rozpovila-pro-osoblyvosti-eksportu-importu-ta-tranzytu-v-pershyi-misiats-2025-roku',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Закарпатська митниця розповіла про особливості експорту, імпорту та '
+          'транзиту в перший місяць 2025 року'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/1741796185-135.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236459-U-Mukachevi-vidbudetsia-novyi-teatralnyi-festyval-Stsena-dlia-dvokh-VIDEO',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'У Мукачеві відбудеться новий театральний фестиваль "Сцена для двох"'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/1/small/474910958_493034450505869_6982145448560692297_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235938-Federatsiiu-boksu-Zakarpatskoi-oblasti-ocholyv-Pavlo-Baloha-FOTO',
+ 'section': 'СПОРТ',
+ 'title': 'Федерацію боксу Закарпатської області очолив Павло Балога'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/486081475_1095576925933980_895741921389145534_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236536-U-ponedilok-u-Mukachevi-poproshchaiutsia-z-polehlym-zakhysnykom-Volodymyrom-Napudoiu-FOTO',
+ 'section': 'СОЦІО',
+ 'title': 'У понеділок у Мукачеві попрощаються з полеглим захисником '
+          'Володимиром Напудою'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/impulse.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236042-Ukrzaliznytsia-zamovyla-relokovanomu-z-Siverskodonetska-na-Zakarpattia-Impulsu-obladnannia-novoi-ievrokolii-Chop-Uzhhorod-za-244-mln',
+ 'section': 'ЕКОНОМІКА',
+ 'title': '"Укрзалізниця" замовила релокованому з Сіверськодонецька на '
+          'Закарпаття "Імпульсу" обладнання нової євроколії Чоп-Ужгород за 244 '
+          'млн'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/483525504_949160030728166_1585642375500452564_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236444-Zakarpatskyi-teatr-z-KHusta-pryviz-do-Uzhhoroda-premieru-MAVKA-lisova-FOTO',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'Закарпатський театр з Хуста привіз до Ужгорода прем\'єру "MAVKA '
+          'лісова"'}
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/IMG20250104110706_01-1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/IMG20250104110706_01-1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/630_360_1738581698-626.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/630_360_1738581698-626.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Myroslav-Birta-1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Myroslav-Birta-1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Shevchenko-v-skanseni.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Shevchenko-v-skanseni.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Afisha-nova-2025-1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/Afisha-nova-2025-1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/photo_2025-01-25_12-09-00-1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/photo_2025-01-25_12-09-00-1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/petytsiia.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/petytsiia.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/a72033bd09c1b9a3722c77579a59cc20.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/a72033bd09c1b9a3722c77579a59cc20.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/469354412_984647990375275_5719244775107634670_n.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/469354412_984647990375275_5719244775107634670_n.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/1/small/IMG20250104110706_01-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235820-V-Uzhhorodi-vidbuvsia-zymovyi-Chempionat-Ukrainy-zi-sportyvnoho-oriientuvannia-FOTO',
+ 'section': 'СПОРТ',
+ 'title': 'В Ужгороді відбувся зимовий Чемпіонат України зі спортивного '
+          'орієнтування'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/630_360_1738581698-626.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236017-Fond-harantuvannia-peredav-aktyvy-ta-zoboviazannia-Kominvestbanku-do-ASVIO-BANKU',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Фонд гарантування передав активи та зобов\'язання "Комінвестбанку" '
+          'до "АСВІО БАНКУ"'}
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/10-22-07_DSC017422.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/10-22-07_DSC017422.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/482317068_942239601420209_5596892199417968425_1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/482317068_942239601420209_5596892199417968425_1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/473619755_1172651191138622_6831672808744900997_1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/1/small/473619755_1172651191138622_6831672808744900997_1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/seredniy_biznes.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/seredniy_biznes.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/469250785_1009057447901845_997872265729435874_1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/469250785_1009057447901845_997872265729435874_1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/Probizhy-dopomozhy-3.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/Probizhy-dopomozhy-3.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/2025.03.07.-Mykhailo-Markovych-1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/3/small/2025.03.07.-Mykhailo-Markovych-1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Myroslav-Birta-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236535-V-Uzhhorodi-u-subotu-poproshchaiutsia-z-polehlym-na-viini-Myroslavom-Birtoiu-FOTO',
+ 'section': 'СОЦІО',
+ 'title': 'В Ужгороді у суботу попрощаються з полеглим на війні Мирославом '
+          'Біртою'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Shevchenko-v-skanseni.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236387-V-uzhhorodskomu-skanseni-posadiat-Shevchenkovu-verbu',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'В ужгородському скансені посадять Шевченкову вербу'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/Afisha-nova-2025-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236409-U-KHusti-vidbudetsia-II-tur-festyvaliu-konkursu-striletskoi-pisni-Krasne-pole-ta-hala-kontsert',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'У Хусті відбудеться ІІ тур фестивалю-конкурсу стрілецької пісні '
+          '"Красне поле" та гала-концерт'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/1/small/photo_2025-01-25_12-09-00-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235924-Na-Tiachivshchyni-vyrobnyk-mebliv-planuie-zaluchyty-160-pratsivnykiv-iz-Banhladesh-FOTO',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'На Тячівщині виробник меблів планує залучити 160 працівників із '
+          'Бангладеш'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Social>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/petytsiia.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236525-Petytsiia-pro-rozrobku-novoho-henplanu-Uzhhoroda-zibrala-neobkhidni-pidpysy-vsoho-za-dobu',
+ 'section': 'СОЦІО',
+ 'title': 'Петиція про розробку нового генплану Ужгорода зібрала необхідні '
+          'підписи всього за добу'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/a72033bd09c1b9a3722c77579a59cc20.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235566-Usyk-vdruhe-peremih-F’iuri-ta-zakhystyv-chempionski-tytuly',
+ 'section': 'СПОРТ',
+ 'title': 'Усик вдруге переміг Ф’юрі та захистив чемпіонські титули'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/469354412_984647990375275_5719244775107634670_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235434-V-Uzhhorodi-pid-chas-blahodiinoho-zabihu-zibraly-51-tys.-hrn-FOTO',
+ 'section': 'СПОРТ',
+ 'title': 'В Ужгороді під час благодійного забігу зібрали 51 тис. грн'}
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/481007407_936598341984335_617250234280675162_n.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/481007407_936598341984335_617250234280675162_n.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/10-22-07_DSC017422.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235488-V-Uzhhorodi-nahorodyly-peremozhtsiv-chempionatu-mista-z-amatorskoho-futbolu',
+ 'section': 'СПОРТ',
+ 'title': 'В Ужгороді нагородили переможців чемпіонату міста з аматорського '
+          'футболу'}
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/480855479_933002682343901_1609458282555010933_1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/480855479_933002682343901_1609458282555010933_1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/turzbir-lystopad-1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/turzbir-lystopad-1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/14-4.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/14-4.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/Nasha-Persha-svitova-2.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/Nasha-Persha-svitova-2.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/469076757_1006123334861923_5233644270542125353_n.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/469076757_1006123334861923_5233644270542125353_n.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/480748485_932117295765773_3258488137385878121_n.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/480748485_932117295765773_3258488137385878121_n.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/482317068_942239601420209_5596892199417968425_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236336-V-Uzhhorodi-vidkryly-vystavku-robit-Mykhaila-Sapatiuka-prysviachenu-100-richchiu-vid-dnia-ioho-narodzhennia-FOTO-VIDEO',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'В Ужгороді відкрили виставку робіт Михайла Сапатюка, присвячену '
+          '100-річчю від дня його народження'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/1/small/473619755_1172651191138622_6831672808744900997_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235803-Prodovolcha-ta-silskohospodarska-orhanizatsiia-OON-FAO-vyrishyla-pidtrymuvaty-malykh-vyrobnykiv-vyna-Odeskoi-ta-Zakarpatskoi-oblastei-FOTO',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Продовольча та сільськогосподарська організація ООН'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/seredniy_biznes.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235499-Torik-na-Zakarpatti-funktsionuvalo-488-tys.-sub’iektiv-hospodariuvannia-z-iakykh-57-tys.-–-pidpryiemstv-iurydychnykh-osib-431-tys.-–-fizychnykh-osib-pidpryiemtsiv',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Торік на Закарпатті функціонувало 48,8 тис. суб’єктів '
+          'господарювання, з яких 5,7 тис. – підприємств-юридичних осіб, 43,1 '
+          'тис. – фізичних осіб-підприємців'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/469250785_1009057447901845_997872265729435874_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235420-Kabmin-zareiestruvav-novyi-industrialnyi-park-Muzhai-na-terytorii-Berehivskoi-hromady',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Кабмін зареєстрував новий індустріальний парк "Мужай" на території '
+          'Берегівської громади'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Sports>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/Probizhy-dopomozhy-3.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235383-Pid-chas-blahodiinoho-zabihu-v-Uzhhorodi-zbyratymut-koshty-dlia-vazhkokhvoroi-donky-viiskovoho',
+ 'section': 'СПОРТ',
+ 'title': 'Під час благодійного забігу в Ужгороді збиратимуть кошти для '
+          'важкохворої доньки військового'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/3/small/2025.03.07.-Mykhailo-Markovych-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236334-V-uzhhorodskomu-skanseni-prezentuiut-knyzhku-Mykhaila-Markovycha-Vatra-v-Karpatakh',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'В ужгородському скансені презентують книжку Михайла Марковича '
+          '"Ватра в Карпатах"'}
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/S9zPl_Z3Kzt4.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/12/small/S9zPl_Z3Kzt4.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/11/small/1732802082-4354-large.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/11/small/1732802082-4354-large.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/2025.02.25.-ZHinka-lektsiia-ta-MK-1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/2025.02.25.-ZHinka-lektsiia-ta-MK-1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/unnamed-10.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/unnamed-10.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2024/11/small/zavod-opaloho-lystia.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2024/11/small/zavod-opaloho-lystia.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/zobrazhennia_viber_2025-02-15_13-45-07-441-1.jpg> (referer: None)
+2025-03-31 11:17:35 [scrapy.pipelines.files] DEBUG: File (downloaded): Downloaded file from <GET https://zakarpattya.net.ua/postimages/news/2025/2/small/zobrazhennia_viber_2025-02-15_13-45-07-441-1.jpg> referred in <None>
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/481007407_936598341984335_617250234280675162_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236257-V-Uzhhorodi-prokhodyt-II-i-Vidkrytyi-mizhnarodnyi-teatralnyi-festyval-aktualnoi-dramaturhii-Drama-sohodennia-FOTO',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'В Ужгороді проходить ІІ-й Відкритий міжнародний театральний '
+          'фестиваль актуальної драматургії "Драма сьогодення"'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/480855479_933002682343901_1609458282555010933_1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236186-V-Uzhhorodi-vidkrylasia-tradytsiina-oblasna-vystavka-Hrafichne-Zakarpattia-FOTO',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'В Ужгороді відкрилася традиційна обласна виставка "Графічне '
+          'Закарпаття"'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/turzbir-lystopad-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235389-TSohorich-na-Zakarpatti-za-11-misiatsiv-splatyly-turystychnoho-zboru-na-42-bilshe-nizh-torik',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Цьогоріч на Закарпатті за 11 місяців сплатили туристичного збору на '
+          '4,2% більше, ніж торік'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/14-4.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235379-Za-sichen–veresen-2024-ho-na-Zakarpatti-koefitsiient-pokryttia-eksportom-importu-stanovyv-093',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'За січень–вересень 2024-го на Закарпатті коефіцієнт покриття '
+          'експортом імпорту становив 0,93'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/Nasha-Persha-svitova-2.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236175-U-p’iatnytsiu-v-Uzhhorodi-predstavliat-antolohiiu-ukrainskoi-khudozhnoi-prozy-Nasha-Persha-svitova',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'У п’ятницю в Ужгороді представлять антологію української художньої '
+          'прози "Наша Перша світова"'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/469076757_1006123334861923_5233644270542125353_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235372-U-punkti-propusku-Luzhanka-–-Berehshuran-zapustyly-oformlennia-vantazhivok',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'У пункті пропуску "Лужанка – Берегшурань" запустили оформлення '
+          'вантажівок'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/480748485_932117295765773_3258488137385878121_n.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236185-V-Uzhhorodi-vidbudetsia-II-I-Vidkrytyi-mizhnarodnyi-teatralnyi-festyval-aktualnoi-dramaturhii-Drama-sohodennia-FOTO',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'В Ужгороді відбудеться ІІ-Й Відкритий міжнародний театральний '
+          'фестиваль актуальної драматургії "Драма сьогодення"'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/12/small/S9zPl_Z3Kzt4.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235403-NBU-vyznav-zakarpatskyi-Kominvestbank-bankrutom',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'НБУ визнав закарпатський "Комінвестбанк" банкрутом'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/11/small/1732802082-4354-large.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235327-IEvrokoliiu-na-diliantsi-Chop-Uzhhorod-ne-zmozhut-pobuduvaty-do-kintsia-roku',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'Євроколію на ділянці "Чоп-Ужгород" не зможуть побудувати до кінця '
+          'року'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/2025.02.25.-ZHinka-lektsiia-ta-MK-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236169-Do-Dnia-ukrainskoi-zhinky-v-uzhhorodskomu-skanseni-hovorytymut-pro-zhinku-v-tradytsiinii-kulturi-ukraintsiv-Zakarpattia',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'До Дня української жінки в ужгородському скансені говоритимуть про '
+          'жінку в традиційній культурі українців Закарпаття'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/unnamed-10.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236081-Do-Dnia-zakokhanykh-v-uzhhorodskii-filarmonii-zazvuchyt-Formula-kokhannia',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'До Дня закоханих в ужгородській філармонії зазвучить "Формула '
+          'кохання"'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Economy>
+{'date': '2024',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2024/11/small/zavod-opaloho-lystia.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/235225-U-Frantsii-vidkryly-pershe-u-sviti-industrialne-vyrobnytstvo-tseliulozy-z-opaloho-lystia-na-osnovi-startapu-zakarpattsia-Valentyna-Frechky-VIDEO',
+ 'section': 'ЕКОНОМІКА',
+ 'title': 'У Франції відкрили перше у світі індустріальне виробництво целюлози '
+          'з опалого листя на основі стартапу закарпатця Валентина Фречки'}
+2025-03-31 11:17:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://zakarpattya.net.ua/Culture>
+{'date': '2025',
+ 'image_urls': ['https://zakarpattya.net.ua/postimages/news/2025/2/small/zobrazhennia_viber_2025-02-15_13-45-07-441-1.jpg'],
+ 'link': 'https://zakarpattya.net.ua/News/236130-VIDEOFAKT.-V-Uzhhorodi-proizhdzhoiu-chastynoiu-brodiat-nichyini-koni',
+ 'section': 'КУЛЬТУРА',
+ 'title': 'ВІДЕОФАКТ. В Ужгороді проїжджою частиною бродять "нічийні" коні'}
+2025-03-31 11:17:35 [scrapy.core.engine] INFO: Closing spider (finished)
+2025-03-31 11:17:35 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 65215,
+ 'downloader/request_count': 162,
+ 'downloader/request_method_count/GET': 162,
+ 'downloader/response_bytes': 1074392,
+ 'downloader/response_count': 162,
+ 'downloader/response_status_count/200': 162,
+ 'elapsed_time_seconds': 16.850868,
+ 'file_count': 150,
+ 'file_status_count/downloaded': 150,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2025, 3, 31, 8, 17, 35, 991910, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 1168249,
+ 'httpcompression/response_count': 12,
+ 'item_dropped_count': 12,
+ 'item_dropped_reasons_count/DropItem': 12,
+ 'item_scraped_count': 158,
+ 'items_per_minute': None,
+ 'log_count/DEBUG': 499,
+ 'log_count/ERROR': 1,
+ 'log_count/INFO': 10,
+ 'log_count/WARNING': 12,
+ 'request_depth_max': 1,
+ 'response_received_count': 162,
+ 'responses_per_minute': None,
+ 'scheduler/dequeued': 12,
+ 'scheduler/dequeued/memory': 12,
+ 'scheduler/enqueued': 12,
+ 'scheduler/enqueued/memory': 12,
+ 'start_time': datetime.datetime(2025, 3, 31, 8, 17, 19, 141042, tzinfo=datetime.timezone.utc)}
+2025-03-31 11:17:35 [scrapy.core.engine] INFO: Spider closed (finished)
