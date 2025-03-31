@@ -4,13 +4,16 @@ import psycopg2
 import re
 from scrapy.pipelines.images import ImagesPipeline
 import os
+import requests
 
 class NewsScrappingLabPipeline:
+    API_URL = "http://127.0.0.1:8000/news/bulk"  # Адреса вашого API
+
     def open_spider(self, spider):
         try:
             self.conn = psycopg2.connect(
                 dbname="news_db",
-                 user="postgres",
+                user="postgres",
                 password="07042006",
                 host="localhost",
                 port="5432"
@@ -37,11 +40,13 @@ class NewsScrappingLabPipeline:
 
     def process_item(self, item, spider):
         try:
+            # Обробка дати
             date_str = item.get("date")
             if date_str:
                 year = date_str.split('.')[2].split(',')[0]
                 item["date"] = year
 
+            # Обробка заголовка
             title = item.get("title")
             if title:
                 item["title"] = re.sub(r'\s*\(.*\)', '', title)
@@ -49,6 +54,7 @@ class NewsScrappingLabPipeline:
             adapter = ItemAdapter(item)
             link = adapter.get("link")
 
+            # Збереження в PostgreSQL
             if self.is_duplicate(link):
                 self.cur.execute("""
                     UPDATE news 
@@ -74,16 +80,40 @@ class NewsScrappingLabPipeline:
                 ))
 
             self.conn.commit()
+
+            # Форматування для API
+            news_data = {
+                "title": item["title"],
+                "date": item["date"],
+                "link": item["link"],
+                "section": item["section"],
+                "image_urls": ','.join(item.get("image_urls", []))
+            }
+
+            # Надсилання до API
+            self.send_to_api([news_data])
+
             return item
         except Exception as e:
             self.conn.rollback()
             raise DropItem(f"Error processing item: {e}")
+
+    def send_to_api(self, data):
+        try:
+            response = requests.post(self.API_URL, json={"news": data})
+            if response.status_code == 200:
+                print("Дані успішно надіслані до API")
+            else:
+                print(f"Помилка API: {response.status_code}, {response.text}")
+        except Exception as e:
+            print(f"Помилка з'єднання з API: {e}")
 
     def close_spider(self, spider):
         if self.cur:
             self.cur.close()
         if self.conn:
             self.conn.close()
+
 
 class NewsImagesPipeline(ImagesPipeline):
     def file_path(self, request, response=None, info=None, *, item=None):

@@ -1,10 +1,12 @@
 import scrapy
+import requests
 from news_scrapping_lab.items import NewsScrappingLab
 
 class ZakarpattyaXPathSpider(scrapy.Spider):
     name = "zakarpattyaxpath"
     allowed_domains = ["zakarpattya.net.ua"]
     start_urls = ["https://zakarpattya.net.ua"]
+    api_url = "http://127.0.0.1:8000/news"  # Адреса вашого API для відправки новин
 
     def parse(self, response):
         news_list = response.xpath("//div[@id='topmenu']")
@@ -32,10 +34,27 @@ class ZakarpattyaXPathSpider(scrapy.Spider):
             link = post.xpath(".//a/@href").get(default="Без посилання")
             link = response.urljoin(link) if link != "Без посилання" else link
             
-            yield NewsScrappingLab(
+            # Створюємо новину
+            news_item = NewsScrappingLab(
                 title=title,
                 date=date,
                 link=link,
                 section=section_name
             )
+            
+            # Відправляємо новину на API
+            self.send_news_to_api(news_item)
 
+    def send_news_to_api(self, news_item):
+        # Відправлення новини через POST запит на API
+        response = requests.post(self.api_url, json={
+            "title": news_item["title"],
+            "date": news_item["date"],
+            "link": news_item["link"],
+            "section": news_item["section"]
+        })
+        
+        if response.status_code == 200:
+            self.logger.info(f"Новина '{news_item['title']}' успішно надіслана на API.")
+        else:
+            self.logger.error(f"Помилка при відправці новини '{news_item['title']}' на API.")
