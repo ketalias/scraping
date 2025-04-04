@@ -9,7 +9,6 @@ class ZakarpattyaXPathSpider(scrapy.Spider):
     allowed_domains = ["zakarpattya.net.ua", "localhost"]
     start_urls = ["https://zakarpattya.net.ua"]
 
-
     # API URL для надсилання новин
     API_URL = "http://localhost:8000/add-news/"
 
