@@ -5,6 +5,10 @@ news_scrapping_lab/items.py
 news_scrapping_lab/middlewares.py
 news_scrapping_lab/pipelines.py
 news_scrapping_lab/settings.py
+news_scrapping_lab/fastapi_api/__init__.py
+news_scrapping_lab/fastapi_api/main.py
+news_scrapping_lab/fastapi_api/schemas.py
+news_scrapping_lab/fastapi_api/storage.py
 news_scrapping_lab/spiders/__init__.py
 news_scrapping_lab/spiders/zakarpattya.py
 news_scrapping_lab/spiders/zakarpattya_css.py
