@@ -12,7 +12,6 @@ class NewsItem(BaseModel):
     section: str
     image_urls: List[str]
 
-# Тимчасове сховище для новин (поки без бази даних)
 news_storage = []
 
 # API для отримання новин
